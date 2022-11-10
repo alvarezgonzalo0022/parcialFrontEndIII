@@ -18,6 +18,7 @@ export default function Post({id, titulo, texto, likes, handleEvent}) {
 
   const handleClick = (e) =>{
     if(countLikes < 10) {
+      console.log("Sumo un like: " + titulo);
       setCountLikes(prev => prev + 1)
       handleEvent(e);
     }
